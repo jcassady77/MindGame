@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "widowed, raising daughter Wren alone"
 faction: null
 alive: true
-last_simulated: "0009-01-01"
+last_simulated: "0041-01-01"
 ---
 
 ## Core
@@ -49,6 +49,30 @@ backstory: |
 ## Lived
 
 ```lived
+{"current_state": {"resilience": 0.88, "community_focus": 0.92, "optimism": 0.65, "watchfulness": 0.63, "wren_centricity": 0.97}, "tendencies": {"resilience": "Brynn is unyielding in the face of adversity, drawing strength from the community and her purpose.", "community_focus": "Brynn is deeply invested in the welfare of Hearthfield, seeing the inn as its beating heart and striving for its collective good.", "optimism": "Brynn maintains a hopeful outlook, though tempered by a pragmatic understanding of life's unpredictable hardships.", "watchfulness": "Brynn possesses a keen eye for details and undercurrents, remaining observant of people and situations.", "wren_centricity": "Brynn's every decision and action is fundamentally driven by the desire to secure and nurture Wren's future."}}
+```lived
+current_state: neutral
+```
+```lived
+current_mood: content
+temperament: warm
+traits:
+  hospitality: 0.98
+  trustworthiness: 0.89
+  cautious: 0.75
+  community_oriented: 1.0
+  resilient: 1.0
+  protective: 1.0
+  observant: 0.82
+emotional_state:
+  calm: 0.85
+  grateful: 0.95
+  hopeful: 0.80
+  somber: 0.10
+```
+```lived
+current_state: "Feeling grounded and purposeful, content with the inn's prosperity and Wren's growth, while maintaining a pragmatic watchfulness borne from past experiences."
+```
 ```lived
 mood: "settled and quietly optimistic"
 current_state:

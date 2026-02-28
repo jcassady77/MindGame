@@ -4,7 +4,7 @@ import { listNPCIds } from "./npc-loader.js";
 
 const STATE_PATH = resolve(process.cwd(), "world/state.json");
 const POSITIONS_PATH = resolve(process.cwd(), "world/positions.json");
-const OBJECTIVES_COUNT = 4;
+const OBJECTIVES_COUNT = 2;
 const GRID_MIN = 0;
 const GRID_MAX = 25;
 
@@ -52,7 +52,9 @@ export function allObjectivesComplete(): boolean {
 }
 
 export function resetObjectives(newDate: string): GameState {
-  const objectives = generateObjectives(newDate);
+  const current = loadState();
+  const existingNpcIds = current.objectives.map((o) => o.npcId);
+  const objectives = refreshObjectivePositions(existingNpcIds);
   const state: GameState = { currentDate: newDate, objectives };
   saveState(state);
   return state;
@@ -69,8 +71,20 @@ function generateObjectives(currentDate: string): Objective[] {
   const alive = npcIds.filter(isAlive);
   const shuffled = alive.sort(() => Math.random() - 0.5);
   const picked = shuffled.slice(0, Math.min(OBJECTIVES_COUNT, shuffled.length));
-  const positions = loadOrGeneratePositions(npcIds);
-  return picked.map((npcId) => ({
+  return refreshObjectivePositions(picked);
+}
+
+function refreshObjectivePositions(npcIds: string[]): Objective[] {
+  const positions = loadOrGeneratePositions(listNPCIds());
+  const range = GRID_MAX - GRID_MIN;
+  for (const npcId of npcIds) {
+    positions[npcId] = {
+      x: Math.floor(Math.random() * range) + GRID_MIN,
+      z: Math.floor(Math.random() * range) + GRID_MIN,
+    };
+  }
+  writeFileSync(POSITIONS_PATH, JSON.stringify(positions, null, 2), "utf-8");
+  return npcIds.map((npcId) => ({
     npcId,
     npcName: getNPCName(npcId),
     position: positions[npcId],

@@ -1,6 +1,11 @@
 import express from "express";
 import { callGemini } from "./gemini.js";
-import { loadNPC, loadEnvironment, listNPCIds, type NPCContext } from "./npc-loader.js";
+import {
+  loadNPC,
+  loadEnvironment,
+  listNPCIds,
+  type NPCContext,
+} from "./npc-loader.js";
 import {
   replaceLivedBlock,
   replaceTownLivedBlock,
@@ -36,7 +41,10 @@ app.get("/state", (_req, res) => {
 });
 
 app.post("/chat", async (req, res) => {
-  const { npcId, playerMessage } = req.body as { npcId: string; playerMessage: string };
+  const { npcId, playerMessage } = req.body as {
+    npcId: string;
+    playerMessage: string;
+  };
 
   if (!npcId || !playerMessage) {
     res.status(400).json({ error: "npcId and playerMessage are required" });
@@ -51,7 +59,14 @@ app.post("/chat", async (req, res) => {
     return;
   }
 
-  const prompt = buildChatPrompt(npc.name, npc.coreBlock, npc.livedBlock, npc.memoriesContent, npc.lastSimulated, playerMessage);
+  const prompt = buildChatPrompt(
+    npc.name,
+    npc.coreBlock,
+    npc.livedBlock,
+    npc.memoriesContent,
+    npc.lastSimulated,
+    playerMessage,
+  );
 
   let geminiResponse;
   try {
@@ -91,19 +106,23 @@ app.post("/advance-time", async (req, res) => {
   }
 
   // Validate all objectives are complete
-  if (!allObjectivesComplete()) {
-    const state = loadState();
-    const incomplete = state.objectives.filter((o) => !o.completed).map((o) => o.npcName);
-    res.status(403).json({
-      error: "Cannot advance time until all objectives are complete.",
-      incompleteObjectives: incomplete,
-    });
-    return;
-  }
+  // if (!allObjectivesComplete()) {
+  //   const state = loadState();
+  //   const incomplete = state.objectives.filter((o) => !o.completed).map((o) => o.npcName);
+  //   res.status(403).json({
+  //     error: "Cannot advance time until all objectives are complete.",
+  //     incompleteObjectives: incomplete,
+  //   });
+  //   return;
+  // }
 
   // Step 1: Generate world events
   const env = loadEnvironment();
-  const worldPrompt = buildWorldPrompt(env.currentContext, env.livedBlock, years);
+  const worldPrompt = buildWorldPrompt(
+    env.currentContext,
+    env.livedBlock,
+    years,
+  );
 
   let worldResponse;
   try {
@@ -119,10 +138,17 @@ app.post("/advance-time", async (req, res) => {
   // Persist environment context and update town soul
   writeEnvironmentContext(environmentContext);
   if (worldResponse.newMemories) {
-    writeEnvironmentMemory(`${String(new Date().getFullYear()).padStart(4, "0")}-01-01`, "world-advance", worldResponse.newMemories);
+    writeEnvironmentMemory(
+      `${String(new Date().getFullYear()).padStart(4, "0")}-01-01`,
+      "world-advance",
+      worldResponse.newMemories,
+    );
   }
   if (worldResponse.newSoul && env.townContent) {
-    const updatedTown = replaceTownLivedBlock(env.townContent, worldResponse.newSoul);
+    const updatedTown = replaceTownLivedBlock(
+      env.townContent,
+      worldResponse.newSoul,
+    );
     writeTownSoul(updatedTown);
   }
 
@@ -167,7 +193,7 @@ app.post("/advance-time", async (req, res) => {
         npc.memoriesContent,
         newDate,
         years,
-        otherNpcs
+        otherNpcs,
       );
 
       const npcResponse = await callGemini(npcPrompt);
@@ -177,18 +203,24 @@ app.post("/advance-time", async (req, res) => {
       let updatedSoul = replaceLivedBlock(npc.soulContent, npcResponse.newSoul);
       updatedSoul = updateLastSimulated(updatedSoul, newDate);
       writeSoul(npcId, updatedSoul);
-    })
+    }),
   );
 
   const npcErrors = results
-    .map((r, i) => r.status === "rejected" ? `${npcIds[i]}: ${r.reason}` : null)
+    .map((r, i) =>
+      r.status === "rejected" ? `${npcIds[i]}: ${r.reason}` : null,
+    )
     .filter(Boolean) as string[];
 
   // Reset game state with new objectives for the new era
   const newDate = addYearsToDate(loadState().currentDate, years);
   const newState = resetObjectives(newDate);
 
-  const response: { environmentContext: string; objectives: typeof newState.objectives; errors?: string[] } = {
+  const response: {
+    environmentContext: string;
+    objectives: typeof newState.objectives;
+    errors?: string[];
+  } = {
     environmentContext,
     objectives: newState.objectives,
   };
@@ -209,7 +241,7 @@ function buildChatPrompt(
   livedBlock: string,
   memoriesContent: string,
   lastSimulated: string,
-  playerMessage: string
+  playerMessage: string,
 ): string {
   const memoriesSection = memoriesContent
     ? `## Your Memories (most recent first)\n${memoriesContent}`
@@ -240,7 +272,11 @@ Return exactly:
 - newSoul: Only the updated content that goes between the \`\`\`lived fences. Update current_state to reflect this interaction. You may adjust individual trait current values by at most ±0.05 if the interaction genuinely affected you. Keep all other fields identical.`;
 }
 
-function buildWorldPrompt(currentContext: string, livedBlock: string, years: number): string {
+function buildWorldPrompt(
+  currentContext: string,
+  livedBlock: string,
+  years: number,
+): string {
   return `You are the narrator of a living medieval town called Hearthfield.
 
 ## Current Town Soul State
@@ -275,7 +311,7 @@ function buildTimeAdvancePrompt(
   memoriesContent: string,
   newDate: string,
   years: number,
-  otherNpcsRoster: string
+  otherNpcsRoster: string,
 ): string {
   const memoriesSection = memoriesContent
     ? `## Your Memories Before These Years\n${memoriesContent}`

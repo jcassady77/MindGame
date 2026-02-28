@@ -1,0 +1,23 @@
+{
+  "currentDate": "0041-01-01",
+  "objectives": [
+    {
+      "npcId": "brynn-ashford",
+      "npcName": "Brynn Ashford",
+      "position": {
+        "x": 12,
+        "z": 0
+      },
+      "completed": false
+    },
+    {
+      "npcId": "rowan-steelmark",
+      "npcName": "Rowan Steelmark",
+      "position": {
+        "x": 4,
+        "z": 0
+      },
+      "completed": false
+    }
+  ]
+}

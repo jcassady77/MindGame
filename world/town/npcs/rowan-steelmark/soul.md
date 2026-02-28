@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "married to Danya Steelmark"
 faction: "Town Guard"
 alive: true
-last_simulated: "0009-01-01"
+last_simulated: "0041-01-01"
 ---
 
 ## Core
@@ -50,12 +50,48 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
 current_state:
-  vigilance: 0.82
-  compassion: 0.77
-  adaptability: 0.84
-  weariness: 0.48
+  age: 49
+  justice: 0.85
+  loyalty: 0.95
+  community: 0.90
+  pragmatism: 0.80
+  emotional_openness: 0.25
+  resilience: 0.90
+tendencies:
+  justice: "firmly ingrained"
+  loyalty: "unwavering"
+  community: "paramount"
+  pragmatism: "deeply relied upon"
+  emotional_openness: "slowly developing a deeper, though still subtle, empathy for shared burdens"
+  resilience: "profoundly strengthened"
+```
+```lived
+lived:
+  current_state:
+    dutiful: 0.90
+    observant: 0.80
+    reserved: 0.75
+    protective: 0.90
+    weary_burden: 0.65
+    grounded_optimism: 0.55
+    resilience: 0.80
+    cautiousness: 0.70
+  tendencies:
+    to_seek_order: "always"
+    to_prioritize_community_wellbeing: "always"
+    to_express_emotion_verbally: "rarely"
+    to_act_decisively_in_crisis: "always"
+```
+```lived
+current_state:
+  vigilance: 0.88
+  compassion: 0.85
+  adaptability: 0.93
+  weariness: 0.58
   sense_of_community_responsibility: 0.99
+```
 ```lived
 traits:
   trust:
