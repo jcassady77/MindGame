@@ -12,6 +12,12 @@ import {
   writeTownSoul,
   addYearsToDate,
 } from "./npc-writer.js";
+import {
+  loadState,
+  markObjectiveComplete,
+  allObjectivesComplete,
+  resetObjectives,
+} from "./state.js";
 
 const app = express();
 app.use(express.json());
@@ -22,6 +28,11 @@ const PORT = process.env.PORT ?? 3000;
 // Returns: { npcResponse: string }
 app.get("/health", (_req, res) => {
   res.json({ status: "ok" });
+});
+
+// GET /state
+app.get("/state", (_req, res) => {
+  res.json(loadState());
 });
 
 app.post("/chat", async (req, res) => {
@@ -61,7 +72,11 @@ app.post("/chat", async (req, res) => {
   let updatedSoul = replaceLivedBlock(npc.soulContent, newSoul);
   writeSoul(npcId, updatedSoul);
 
-  res.json({ npcResponse });
+  // Mark objective complete if conversation ended
+  const conversationEnded = npcResponse.trimEnd().endsWith("Good bye.");
+  if (conversationEnded) markObjectiveComplete(npcId);
+
+  res.json({ npcResponse, conversationEnded });
 });
 
 // POST /advance-time
@@ -72,6 +87,17 @@ app.post("/advance-time", async (req, res) => {
 
   if (!years || typeof years !== "number" || years < 1) {
     res.status(400).json({ error: "years must be a positive integer" });
+    return;
+  }
+
+  // Validate all objectives are complete
+  if (!allObjectivesComplete()) {
+    const state = loadState();
+    const incomplete = state.objectives.filter((o) => !o.completed).map((o) => o.npcName);
+    res.status(403).json({
+      error: "Cannot advance time until all objectives are complete.",
+      incompleteObjectives: incomplete,
+    });
     return;
   }
 
@@ -158,7 +184,14 @@ app.post("/advance-time", async (req, res) => {
     .map((r, i) => r.status === "rejected" ? `${npcIds[i]}: ${r.reason}` : null)
     .filter(Boolean) as string[];
 
-  const response: { environmentContext: string; errors?: string[] } = { environmentContext };
+  // Reset game state with new objectives for the new era
+  const newDate = addYearsToDate(loadState().currentDate, years);
+  const newState = resetObjectives(newDate);
+
+  const response: { environmentContext: string; objectives: typeof newState.objectives; errors?: string[] } = {
+    environmentContext,
+    objectives: newState.objectives,
+  };
   if (npcErrors.length > 0) response.errors = npcErrors;
 
   res.json(response);
@@ -202,7 +235,7 @@ ${memoriesSection}
 Respond in character as ${name}.
 
 Return exactly:
-- npcResponse: What you say aloud (1–5 sentences, in your voice, shaped by your temperament and current emotional state)
+- npcResponse: What you say aloud (1–5 sentences, in your voice, shaped by your temperament and current emotional state). If the conversation feels naturally concluded — the player is leaving, the topic is resolved, or you have nothing more to say — end your response with exactly "Good bye." on its own. Do not add "Good bye." if the conversation is still ongoing.
 - newMemories: A complete memory file for this interaction. Use YAML frontmatter between --- fences (fields: date: "${lastSimulated}", type, subject, emotional_valence, weight, source, faded: false, fade_date: null), then a blank line, then 2–5 sentences in first-person. Assign emotional_valence and weight based on how this felt to you.
 - newSoul: Only the updated content that goes between the \`\`\`lived fences. Update current_state to reflect this interaction. You may adjust individual trait current values by at most ±0.05 if the interaction genuinely affected you. Keep all other fields identical.`;
 }
