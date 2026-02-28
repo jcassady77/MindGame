@@ -1,0 +1,70 @@
+{
+  "theme": {
+    "title": "SKYRIM",
+    "subtitle": "Tundra Echoes • Nordic Realm",
+    "era": "4E 201",
+    "eraLabel": "Fourth Era",
+    "atmosphereLabel": "Atmosphere",
+    "atmosphereDescription": "The cold winds of the north howl through the ancient stone halls. A land of dragons, heroes, and eternal frost."
+  },
+  "infoModal": {
+    "title": "The Realm of Skyrim",
+    "paragraphs": [
+      "Skyrim is the northernmost province of Tamriel, a land of rugged mountains, icy tundras, and ancient Nordic ruins. It is the home of the Nords, a hardy people known for their resilience and martial prowess.",
+      "From the bustling markets of Whiterun to the frozen docks of Windhelm, the province is steeped in history and myth. Ancient word walls and dragon mounds dot the landscape, remnants of a time when dragons ruled the skies."
+    ],
+    "stats": [
+      {
+        "icon": "Sword",
+        "label": "Combat",
+        "description": "Steel blades and iron shields of the Dragonborn."
+      },
+      {
+        "icon": "Wind",
+        "label": "The Voice",
+        "description": "Shouts that echo through the Throat of the World."
+      }
+    ],
+    "buttonLabel": "RETURN TO THE TUNDRA"
+  },
+  "scene": {
+    "citySize": 250,
+    "buildingCount": 300,
+    "treeCount": 150,
+    "npcCount": 40,
+    "skyColor": "#aabbcc",
+    "fogDensity": 0.006,
+    "groundColor": "#eeeeee",
+    "ambientLight": {
+      "color": "#ccddee",
+      "intensity": 1.2
+    },
+    "sunLight": {
+      "color": "#ffffff",
+      "intensity": 1.5
+    }
+  },
+  "materials": {
+    "character": {
+      "iron": "#555555",
+      "fur": "#4a3728",
+      "skin": "#ffdbac",
+      "blade": "#888888"
+    },
+    "buildings": {
+      "stone": "#333333",
+      "wood": "#4b3621",
+      "roof": "#111111"
+    },
+    "environment": {
+      "trunk": "#3d2b1f",
+      "leaves": "#1a2e1a"
+    }
+  },
+  "vignette": "rgba(30,50,80,0.4)",
+  "particles": {
+    "color": "rgba(255,255,255,0.8)",
+    "size": "30px",
+    "opacity": 0.4
+  }
+}
