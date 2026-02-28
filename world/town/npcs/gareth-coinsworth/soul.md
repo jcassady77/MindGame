@@ -8,7 +8,7 @@ economic_status: wealthy
 relationship_status: "married to Lisenne Coinsworth (strained)"
 faction: "Merchant's Guild"
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -49,50 +49,49 @@ backstory: |
 ## Lived
 
 ```lived
-traits:
-  trust:
-    seed: 0.25
-    current: 0.25
-  hope:
-    seed: 0.5
-    current: 0.5
-  bitterness:
-    seed: 0.4
-    current: 0.4
-  ambition:
-    seed: 0.9
-    current: 0.9
-  greed:
-    seed: 0.8
-    current: 0.8
-  empathy:
-    seed: 0.25
-    current: 0.25
-  courage:
-    seed: 0.5
-    current: 0.5
-  suspicion:
-    seed: 0.75
-    current: 0.75
-  loyalty:
-    seed: 0.3
-    current: 0.3
-  resentment:
-    seed: 0.45
-    current: 0.45
+lived:
+  traits:
+    trust:
+      seed: 0.25
+      current: 0.10
+    hope:
+      seed: 0.5
+      current: 0.45
+    bitterness:
+      seed: 0.4
+      current: 0.55
+    ambition:
+      seed: 0.9
+      current: 1.00
+    greed:
+      seed: 0.8
+      current: 1.00
+    empathy:
+      seed: 0.25
+      current: 0.10
+    courage:
+      seed: 0.5
+      current: 0.50
+    suspicion:
+      seed: 0.75
+      current: 1.00
+    loyalty:
+      seed: 0.3
+      current: 0.30
+    resentment:
+      seed: 0.45
+      current: 0.55
 
-tendencies:
+  tendencies:
   - "frames every interaction in terms of what it costs and what it's worth"
   - "becomes visibly generous in public and notably less so in private"
   - "positions himself near whoever holds the most influence in any room"
   - "remembers every slight but waits patiently for the right moment to collect"
 
-wounds: []
+  wounds: []
 
-growth: []
+  growth: []
 
-current_state: |
-  Gareth is comfortable and watchful. Business is good, the guild is stable,
-  and he's positioned himself well. But comfort makes him anxious — he's
-  learned that fortune turns, and he's always scanning for the turn.
+  current_state: |
+    Gareth, now 50, has navigated the past two tumultuous years with his usual single-minded focus on profit and control. The brutal winter was a stark reminder of the fragility of prosperity, hardening his resolve and sharpening his suspicion of any reliance on others. He views the town's collective struggle through the lens of personal gain and loss. The subsequent bountiful harvest, while easing some tensions, only fueled his insatiable greed and ambition, as he moved swiftly to capitalize on the restored abundance. He trusts even less than before, seeing self-reliance as the only true path, and his patience for anything that doesn't directly serve his escalating interests has dwindled further.
 ```

@@ -8,7 +8,7 @@ economic_status: poor
 relationship_status: "single, several unresolved attachments"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -50,37 +50,39 @@ backstory: |
 ## Lived
 
 ```lived
+{"current_state": {"mood": "tempered melancholy with quiet hope", "energy": "moderate-low", "openness": 0.73, "conscientiousness": 0.47, "extraversion": 0.33, "agreeableness": 0.84, "neuroticism": 0.78, "optimism": 0.42, "empathy": 0.98, "resilience": 0.58, "cynicism": 0.20}, "tendencies": {"to withdraw when overwhelmed": true, "to seek beauty in mundane things": true, "to internalize others' emotions": true, "to express feelings through music": true, "to avoid confrontation": true, "to find comfort in quiet solitude": true}}
+```lived
 traits:
   trust:
     seed: 0.7
-    current: 0.7
+    current: 0.72
   hope:
     seed: 0.6
-    current: 0.6
+    current: 0.63
   bitterness:
     seed: 0.2
-    current: 0.2
+    current: 0.18
   ambition:
     seed: 0.35
-    current: 0.35
+    current: 0.30
   greed:
     seed: 0.05
     current: 0.05
   empathy:
     seed: 0.9
-    current: 0.9
+    current: 0.95
   courage:
     seed: 0.4
     current: 0.4
   suspicion:
     seed: 0.2
-    current: 0.2
+    current: 0.18
   loyalty:
     seed: 0.7
-    current: 0.7
+    current: 0.72
   resentment:
     seed: 0.15
-    current: 0.15
+    current: 0.12
 
 tendencies:
   - "absorbs the emotional atmosphere of any room he enters"
@@ -93,8 +95,6 @@ wounds: []
 growth: []
 
 current_state: |
-  Callum is in a restless season. He has been writing more than performing
-  lately, filling his journal with songs he won't play for anyone yet. He
-  laughs in the common room and means it, but walks home along the river
-  afterward with a heaviness he can't quite name.
+  Callum has matured into a deeper, more observant melancholic. The steady growth of Hearthfield has offered a gentle backdrop to his introspective nature, allowing him to delve further into his songwriting. He still finds solace in his music, performing regularly at the inn, but his heart now resonates with the quiet stories of the settlers, turning their modest joys and unspoken sorrows into the complex melodies filling his journal. The restless yearning has softened, replaced by a quiet acceptance of the world's rhythms, though the familiar weight of empathy remains his constant companion.
+```
 ```

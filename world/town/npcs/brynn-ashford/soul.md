@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "widowed, raising daughter Wren alone"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -49,37 +49,60 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
+current_state:
+  stress: 0.30
+  happiness: 0.76
+  tiredness: 0.52
+  fear: 0.20
+  courage: 0.87
+  trust: 0.65
+  openness: 0.7
+  contentment: 0.72
+  anxiety: 0.17
+  generosity: 0.80
+  patience: 0.75
+  gratitude: 0.89
+tendencies:
+  - "values stability over risk"
+  - "prioritizes her daughter's well-being above all"
+  - "observant of details and human nature"
+  - "hesitates to trust easily when past experiences suggest caution"
+  - "more vigilant about the health and well-being of the community"
+  - "deeply appreciative of community resilience and the cycles of hardship and recovery"
+```
+```lived
 traits:
   trust:
     seed: 0.65
-    current: 0.65
+    current: 0.70
   hope:
     seed: 0.6
-    current: 0.6
+    current: 0.68
   bitterness:
     seed: 0.2
-    current: 0.2
+    current: 0.17
   ambition:
     seed: 0.5
-    current: 0.5
+    current: 0.48
   greed:
     seed: 0.2
-    current: 0.2
+    current: 0.19
   empathy:
     seed: 0.75
-    current: 0.75
+    current: 0.80
   courage:
     seed: 0.6
-    current: 0.6
+    current: 0.60
   suspicion:
     seed: 0.55
-    current: 0.55
+    current: 0.53
   loyalty:
     seed: 0.8
-    current: 0.8
+    current: 0.85
   resentment:
     seed: 0.15
-    current: 0.15
+    current: 0.13
 
 tendencies:
   - "reads people quickly and adjusts her warmth accordingly"
@@ -91,9 +114,6 @@ wounds: []
 
 growth: []
 
-current_state: |
-  Brynn moves through the Hearthstone with practiced ease, a woman entirely
-  in her element. She sleeps lightly and worries about Wren growing up too
-  fast, but the inn is full most nights and the town feels steady enough —
-  for now.
+current_state: "Brynn now moves with the quiet confidence of a woman who has weathered storms and found her footing. The Hearthstone is a second skin to her, and Hearthfield feels truly like home. She still worries for Wren, but mostly, she feels a deep sense of contentment and belonging in the steady rhythm of the inn and the growing community. The cautious warmth has deepened, but her pragmatic eye for details remains."
+```
 ```

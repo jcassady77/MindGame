@@ -27,8 +27,8 @@ cultural_values:
 ## Lived
 
 ```lived
-population: 247
-prosperity: 0.55
+population: 268
+prosperity: 0.60
 infrastructure:
   condition: stable
   notable_buildings:
@@ -41,15 +41,10 @@ infrastructure:
     - "Guard Barracks"
     - "Thornwick Healing House (Elara's practice)"
   recent_construction: []
-social_atmosphere: 0.65
+social_atmosphere: 0.66
 safety: 0.7
 current_state: |
-  Hearthfield is steady but not thriving. The harvest last season was
-  decent, the roads are safe enough, and the inn stays busy most
-  evenings. There's a quiet confidence in the air — not prosperity,
-  exactly, but the comfort of knowing where your next meal comes from.
-  The arrival of a stranger from the east has given people something
-  new to talk about.
+  After enduring a challenging, protracted winter that depleted its stores, Hearthfield found renewed strength in a bountiful spring harvest. The town's communal spirit, though tested, has rekindled, and its people are slowly but steadily rebuilding their reserves and their quiet sense of hope.
 wounds: []
 growth: []
 ```

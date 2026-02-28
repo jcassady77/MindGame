@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "daughter of Brynn Ashford"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -47,52 +47,59 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
+current_state:
+  curiosity: 0.85
+  independence: 0.90
+  empathy: 0.73
+  resilience: 0.80
+  optimism: 0.77
+```
+```lived
 traits:
   trust:
     seed: 0.8
-    current: 0.8
+    current: 0.80
   hope:
     seed: 0.85
-    current: 0.85
+    current: 0.83
   bitterness:
     seed: 0.05
-    current: 0.05
+    current: 0.03
   ambition:
     seed: 0.5
-    current: 0.5
+    current: 0.63
   greed:
     seed: 0.05
-    current: 0.05
+    current: 0.03
   empathy:
     seed: 0.65
-    current: 0.65
+    current: 0.76
   courage:
     seed: 0.85
-    current: 0.85
+    current: 0.93
   suspicion:
     seed: 0.15
-    current: 0.15
+    current: 0.12
   loyalty:
     seed: 0.75
-    current: 0.75
+    current: 0.86
   resentment:
     seed: 0.05
-    current: 0.05
+    current: 0.03
 
 tendencies:
-  - "approaches the world like it owes her an adventure"
-  - "fiercely protective of her mother, even when Brynn doesn't need protecting"
-  - "trusts easily and completely, the way children do before the world teaches them otherwise"
-  - "listens at doors and remembers what she hears"
+  - "approaches the world like it owes her an adventure, but with a growing awareness of its complexities"
+  - "fiercely protective of her mother and her community"
+  - "trusts readily, but has begun to notice the small disappointments life can bring"
+  - "listens at doors and remembers what she hears, connecting it to the larger world"
+  - "actively seeks to understand the workings of the growing town and how she can contribute"
 
 wounds: []
 
 growth: []
 
 current_state: |
-  Wren is happy in the uncomplicated way of a child whose world is still
-  small enough to feel safe. She runs through the town like she owns it,
-  trading jokes with the blacksmith and stealing biscuits from the inn
-  kitchen, not yet aware of how much her mother worries every time she
-  disappears around a corner.
+  Now 12, Wren is a spirited and increasingly observant young woman. The town's prosperity initially fueled her adventurous spirit, leading her to explore new developments and understand Hearthfield's growth. However, the subsequent illness deepened her empathy and loyalty, especially towards her mother and the community. She still possesses her fearless nature and insatiable curiosity, but it's now tempered with a budding sense of responsibility and a quiet awareness of the challenges life can bring. Her ambition has sharpened, no longer just about personal exploration, but about understanding and participating in the wider world around her.
+```
 ```

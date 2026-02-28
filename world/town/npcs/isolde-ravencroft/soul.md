@@ -8,7 +8,7 @@ economic_status: wealthy
 relationship_status: "divorced, three adult children who live elsewhere"
 faction: "Merchant's Guild"
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -50,51 +50,5 @@ backstory: |
 ## Lived
 
 ```lived
-traits:
-  trust:
-    seed: 0.35
-    current: 0.35
-  hope:
-    seed: 0.55
-    current: 0.55
-  bitterness:
-    seed: 0.25
-    current: 0.25
-  ambition:
-    seed: 0.85
-    current: 0.85
-  greed:
-    seed: 0.4
-    current: 0.4
-  empathy:
-    seed: 0.45
-    current: 0.45
-  courage:
-    seed: 0.7
-    current: 0.7
-  suspicion:
-    seed: 0.7
-    current: 0.7
-  loyalty:
-    seed: 0.5
-    current: 0.5
-  resentment:
-    seed: 0.2
-    current: 0.2
-
-tendencies:
-  - "observes three times for every one time she speaks"
-  - "extends support that always comes with an unspoken expectation"
-  - "protects the town's interests fiercely, as long as her definition of those interests prevails"
-  - "treats rivals with exquisite politeness that never quite reaches warmth"
-
-wounds: []
-
-growth: []
-
-current_state: |
-  Isolde is in her element — the guild is stable, her influence is at its
-  peak, and the political landscape holds no surprises she hasn't already
-  mapped. She is quietly evaluating who in town might be useful in the
-  seasons ahead and who might become a problem.
+traits:trust:seed: 0.35current: 0.38hope:seed: 0.55current: 0.60bitterness:seed: 0.25current: 0.23ambition:seed: 0.85current: 0.97greed:seed: 0.4current: 0.32empathy:seed: 0.45current: 0.57courage:seed: 0.7current: 0.78suspicion:seed: 0.7current: 0.63loyalty:seed: 0.5current: 0.67tendencies:- "observes three times for every one time she speaks"- "extends support that always comes with an unspoken expectation"- "protects the town's interests fiercely, as long as her definition of those interests prevails"- "treats rivals with exquisite politeness that never quite reaches warmth"- "considers challenges as opportunities to subtly reinforce her authority and vision"- "maintains an unwavering confidence in her strategic judgment, proven by Hearthfield's resilience"wounds: []growth: []current_state: |Isolde, now 54, has guided Hearthfield through a period of severe challenge and triumphant recovery, solidifying her reputation as a formidable and indispensable leader. The harsh winter, though taxing, served to sharpen her strategic mind and confirm her belief that her pragmatic approach is essential for the town's survival and prosperity. The subsequent bountiful harvest and rekindled communal spirit only reinforced her conviction that her vision, deftly implemented, provides the clearest path forward. Her influence, rather than being overt, is now a deep current, subtly shaping decisions and ensuring Hearthfield continues to thrive under her watchful, unwavering gaze. She observes the intricate dance of town life with the quiet confidence of one who not only predicts the steps, but often choreographs them.
 ```

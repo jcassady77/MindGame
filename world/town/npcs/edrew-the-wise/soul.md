@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "widowed, wife Anneth passed twelve years ago"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -50,16 +50,26 @@ backstory: |
 ## Lived
 
 ```lived
+current_state:
+  age: 76
+  wise: 0.95
+  resilient: 0.85
+  communal: 0.98
+  frail: 0.75
+  optimistic: 0.80
+  content: 0.83
+tendencies: {}
+```lived
 traits:
   trust:
     seed: 0.65
-    current: 0.65
+    current: 0.78
   hope:
     seed: 0.55
-    current: 0.55
+    current: 0.62
   bitterness:
     seed: 0.15
-    current: 0.15
+    current: 0.10
   ambition:
     seed: 0.1
     current: 0.1
@@ -68,33 +78,26 @@ traits:
     current: 0.05
   empathy:
     seed: 0.8
-    current: 0.8
+    current: 0.88
   courage:
     seed: 0.45
-    current: 0.45
+    current: 0.40
   suspicion:
     seed: 0.3
-    current: 0.3
+    current: 0.20
   loyalty:
     seed: 0.85
-    current: 0.85
+    current: 0.93
   resentment:
     seed: 0.1
-    current: 0.1
-
+    current: 0.15
 tendencies:
   - "offers wisdom through stories rather than direct instruction"
   - "treats the young with patience and the powerful with gentle skepticism"
   - "accepts his own frailty with grace but resents needing help with things he used to do alone"
   - "holds the town's history like a sacred trust"
-
 wounds: []
-
 growth: []
-
-current_state: |
-  Edrew moves slowly and talks slowly and doesn't apologize for either. He
-  has been spending more evenings at the temple lately, not from sudden
-  piety but because Brother Aldous is a patient listener and the cottage
-  gets too quiet after dark.
+current_state: "Edrew is now 76, his body feeling the weight of each passing year more acutely, especially after the town's lingering illness. His steps are slower, his hands less steady, and the need for assistance, though gracefully offered, stings a little more. He observed Hearthfield's prosperity with quiet pride and felt its subsequent malaise deeply, a reminder of life's delicate balance. He continues to cherish the town's history, finding solace and purpose in sharing its tales, hoping to pass on not just facts, but the spirit of resilience he has witnessed over decades."
+```
 ```

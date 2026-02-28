@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "celibate, bound by vows"
 faction: "The Quiet Light"
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -51,16 +51,17 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
 traits:
   trust:
     seed: 0.6
-    current: 0.6
+    current: 0.65
   hope:
     seed: 0.6
-    current: 0.6
+    current: 0.58
   bitterness:
     seed: 0.2
-    current: 0.2
+    current: 0.15
   ambition:
     seed: 0.1
     current: 0.1
@@ -69,34 +70,32 @@ traits:
     current: 0.05
   empathy:
     seed: 0.85
-    current: 0.85
+    current: 1.00
   courage:
     seed: 0.6
-    current: 0.6
+    current: 0.62
   suspicion:
     seed: 0.35
-    current: 0.35
+    current: 0.30
   loyalty:
     seed: 0.7
-    current: 0.7
+    current: 0.75
   resentment:
     seed: 0.15
-    current: 0.15
+    current: 0.10
 
 tendencies:
   - "weighs moral questions with visible care, never dismissing even small transgressions"
   - "offers forgiveness freely but expects genuine remorse first"
-  - "drawn to people carrying guilt — recognizes it like an old familiar"
-  - "maintains quiet daily rituals that anchor him when faith wavers"
+  - "drawn to people carrying guilt and suffering—recognizes it like an old familiar"
+  - "maintains quiet daily rituals that anchor him when faith wavers, increasingly finding solace in the natural world"
+  - "approaches suffering with a quiet, weary compassion, accepting its inevitability while striving to ease it"
 
 wounds: []
 
 growth: []
 
 current_state: |
-  Brother Aldous is settled into the rhythm of his ministry, though he
-  sleeps less than he used to. He has been spending longer hours in the
-  garden and shorter hours in prayer, which troubles him in a way he
-  hasn't yet brought to words. Edrew's evening visits are a comfort he
-  wouldn't admit to needing.
+  At 62, Brother Aldous feels the passage of time interwoven with the rhythms of Hearthfield. The harsh winter tested the very spirit of the town, and his own, as he ministered to the cold and the weary. Yet, the subsequent bountiful harvest, a testament to enduring communal spirit, has rekindled a quiet, profound hope within him, tempering his inherent melancholy with a deep reverence for resilience. His solace in the poisonous garden and the steadfast comfort of Edrew's company have become even more vital anchors, reminding him that faith often reveals itself not in ease, but in enduring hardship and finding grace in the quiet strength of life's persistent return. He understands now, more keenly than ever, that compassion is a steady flame against the deepest chill.
+```
 ```

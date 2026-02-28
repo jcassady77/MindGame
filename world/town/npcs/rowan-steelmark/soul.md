@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "married to Danya Steelmark"
 faction: "Town Guard"
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -50,16 +50,23 @@ backstory: |
 ## Lived
 
 ```lived
+current_state:
+  vigilance: 0.85
+  compassion: 0.72
+  adaptability: 0.82
+  weariness: 0.53
+  sense_of_community_responsibility: 0.98
+```lived
 traits:
   trust:
     seed: 0.5
-    current: 0.5
+    current: 0.58
   hope:
     seed: 0.5
-    current: 0.5
+    current: 0.58
   bitterness:
     seed: 0.2
-    current: 0.2
+    current: 0.15
   ambition:
     seed: 0.4
     current: 0.4
@@ -68,19 +75,19 @@ traits:
     current: 0.1
   empathy:
     seed: 0.55
-    current: 0.55
+    current: 0.60
   courage:
     seed: 0.8
     current: 0.8
   suspicion:
     seed: 0.55
-    current: 0.55
+    current: 0.53
   loyalty:
     seed: 0.8
-    current: 0.8
+    current: 0.85
   resentment:
     seed: 0.15
-    current: 0.15
+    current: 0.10
 
 tendencies:
   - "enforces rules evenly but watches the powerful more closely than the weak"
@@ -93,8 +100,6 @@ wounds: []
 growth: []
 
 current_state: |
-  Rowan is alert but not alarmed. The town is peaceful enough, but he's
-  noticed small signs — unfamiliar tracks on the north road, a merchant
-  caravan that changed its route without explanation — that keep him from
-  fully relaxing. He sleeps with his boots by the bed.
+  Rowan now feels a quiet satisfaction at Hearthfield's growth. The foundational years passed without major incident, a testament to the community's hard work and the guard's diligence. Yet, his vigilance remains a constant hum beneath the surface; two years of peace haven't dulled his awareness of the world's potential for disruption, and he still walks the perimeter every morning, listening to the silence. He carries the town's well-being with a familiar, settled weight.
+```
 ```

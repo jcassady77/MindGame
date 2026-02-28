@@ -1,0 +1,1 @@
+The first year saw an unusually harsh and protracted winter grip Hearthfield, depleting vital grain stores and testing the endurance of the town's weary populace. Yet, spurred by a renewed communal spirit, the following spring brought a bountiful harvest, allowing the town to gradually replenish its reserves and rekindle its quiet, resilient hope.

@@ -8,7 +8,7 @@ economic_status: destitute
 relationship_status: "single, estranged from all known family"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -51,37 +51,49 @@ backstory: |
 ## Lived
 
 ```lived
+current_state:
+  age: 33
+  vigilance: 0.88
+  trust_in_others: 0.25
+  openness_to_community: 0.38
+  self_reliance: 0.89
+  guilt_about_past: 0.60
+  hope: 0.37
+tendencies:
+  - "still prefers to be watchful, but less prone to immediate distrust of individual townsfolk"
+  - "more willing to quietly observe and appreciate communal efforts"
+```lived
 traits:
   trust:
     seed: 0.2
-    current: 0.2
+    current: 0.30
   hope:
     seed: 0.3
-    current: 0.3
+    current: 0.40
   bitterness:
     seed: 0.4
-    current: 0.4
+    current: 0.35
   ambition:
     seed: 0.3
-    current: 0.3
+    current: 0.33
   greed:
     seed: 0.15
     current: 0.15
   empathy:
     seed: 0.45
-    current: 0.45
+    current: 0.52
   courage:
     seed: 0.7
-    current: 0.7
+    current: 0.70
   suspicion:
     seed: 0.75
-    current: 0.75
+    current: 0.72
   loyalty:
     seed: 0.35
-    current: 0.35
+    current: 0.40
   resentment:
     seed: 0.35
-    current: 0.35
+    current: 0.30
 
 tendencies:
   - "keeps conversations short and functional unless the other person earns more"
@@ -94,9 +106,6 @@ wounds: []
 growth: []
 
 current_state: |
-  Kael is wary and rootless, sleeping light and keeping his camp packed
-  tight enough to leave in minutes. He's been in town long enough to learn
-  a few names but not long enough to use them comfortably. Something about
-  the place makes him linger — maybe the work, maybe the quiet — but he
-  hasn't decided yet whether lingering is safe.
+  Two years have woven Kael further into the fabric of Hearthfield, though he still keeps his threads loose, ready to unravel at need. The town's quiet prosperity offered a fragile sense of security he'd not known before, reinforcing his drive for survival through contribution. The subsequent illness, however, served as a stark reminder of life's unpredictability, solidifying his inherent caution even as his quiet empathy for the townsfolk deepened. He still watches the road, but now he also watches the faces in the market, a silent guardian of a peace he's cautiously come to appreciate.
+```
 ```

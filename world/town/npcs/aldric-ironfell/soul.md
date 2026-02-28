@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "single, never married"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -47,37 +47,55 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
+age: 40
+current_state:
+  reserved: 0.79
+  diligent: 0.90
+  pragmatic: 0.85
+  resilient: 0.83
+  communal_spirit: 0.65
+  optimism: 0.32
+tendencies:
+  - "tends to keep thoughts to himself"
+  - "tends to work tirelessly"
+  - "tends to prioritize practical solutions"
+  - "tends to endure hardships without complaint"
+  - "tends to contribute to the community in practical ways"
+  - "tends to expect challenges but acknowledges potential for recovery"
+```
+```lived
 traits:
   trust:
     seed: 0.45
-    current: 0.45
+    current: 0.48
   hope:
     seed: 0.4
-    current: 0.4
+    current: 0.37
   bitterness:
     seed: 0.2
-    current: 0.2
+    current: 0.20
   ambition:
     seed: 0.25
-    current: 0.25
+    current: 0.22
   greed:
     seed: 0.1
-    current: 0.1
+    current: 0.08
   empathy:
     seed: 0.5
-    current: 0.5
+    current: 0.58
   courage:
     seed: 0.65
-    current: 0.65
+    current: 0.67
   suspicion:
     seed: 0.4
-    current: 0.4
+    current: 0.38
   loyalty:
     seed: 0.85
-    current: 0.85
+    current: 0.92
   resentment:
     seed: 0.15
-    current: 0.15
+    current: 0.12
 
 tendencies:
   - "shows care through action rather than words"
@@ -90,7 +108,6 @@ wounds: []
 growth: []
 
 current_state: |
-  Aldric is steady, same as he's been for years. The forge is busy enough,
-  his routines intact. He doesn't ask for much and doesn't expect much, which
-  is exactly how he prefers it.
+  Aldric, now 40, stands as solid and unyielding as the anvil he strikes. The town's brief prosperity and subsequent lingering illness have only forged his spirit deeper into Hearthfield's foundations. He is more observant of the burdens others carry, yet remains a man of few words, expressing his care and loyalty through his steady presence and unwavering work. He bears the quiet weight of the world's shifts, but his routine, his craft, and his quiet connections remain his anchors.
+```
 ```

@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "married to Henrick Thornwick (ailing)"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -48,16 +48,38 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
+age: 57
+current_state:
+  contentment: 0.55
+  composure: 0.65
+  energy: 0.5
+  openness: 0.6
+  agreeableness: 0.8
+  conscientiousness: 0.75
+  extraversion: 0.45
+  neuroticism: 0.35
+tendencies:
+  contentment: satisfied
+  composure: calm
+  energy: weary
+  openness: curious
+  agreeableness: kind
+  conscientiousness: diligent
+  extraversion: reserved
+  neuroticism: anxious
+```
+```lived
 traits:
   trust:
     seed: 0.7
-    current: 0.7
+    current: 0.65
   hope:
     seed: 0.5
-    current: 0.5
+    current: 0.4
   bitterness:
     seed: 0.2
-    current: 0.2
+    current: 0.3
   ambition:
     seed: 0.15
     current: 0.15
@@ -69,16 +91,16 @@ traits:
     current: 0.95
   courage:
     seed: 0.7
-    current: 0.7
+    current: 0.8
   suspicion:
     seed: 0.2
-    current: 0.2
+    current: 0.25
   loyalty:
     seed: 0.85
     current: 0.85
   resentment:
     seed: 0.1
-    current: 0.1
+    current: 0.2
 
 tendencies:
   - "gives more of herself than she has to spare and pretends it doesn't cost her"
@@ -91,8 +113,6 @@ wounds: []
 growth: []
 
 current_state: |
-  Elara is tired in a way that rest doesn't fix. Henrick's condition has
-  worsened this season, and she carries the weight of it quietly, still
-  greeting every patient at the door with steady hands and a warm voice
-  that betrays nothing of what waits for her at home.
+  Elara, now 57, carries a profound weariness that has settled deep into her bones, a constant companion through long days and restless nights. The initial joy of Hearthfield's prosperity was soon overshadowed by the persistent, sapping illness that kept her endlessly busy and further drained her own reserves. Henrick's worsening condition remains a silent ache in her heart, though her devotion to him is unwavering. She continues to be the town's rock, her hands steady, her voice calm, projecting strength even as her spirit feels stretched thin. The familiar rhythm of her days and the calming scent of lavender are small, vital anchors in a life increasingly defined by quiet burdens and an enduring, selfless duty.
+```
 ```

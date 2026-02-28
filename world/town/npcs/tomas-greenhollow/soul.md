@@ -8,7 +8,7 @@ economic_status: poor
 relationship_status: "married to Bessa Greenhollow, two young sons"
 faction: null
 alive: true
-last_simulated: "0001-01-01"
+last_simulated: "0007-01-01"
 ---
 
 ## Core
@@ -50,53 +50,60 @@ backstory: |
 ## Lived
 
 ```lived
+current_state:
+  resilience: 0.78
+  optimism: 0.15
+  community_reliance: 0.28
+  contentment: 0.53
+  patience: 0.79
+tendencies:
+  - self-reliance
+  - perseverance
+```lived
 traits:
   trust:
     seed: 0.35
-    current: 0.35
+    current: 0.30
   hope:
     seed: 0.35
     current: 0.35
   bitterness:
     seed: 0.35
-    current: 0.35
+    current: 0.32
   ambition:
     seed: 0.2
-    current: 0.2
+    current: 0.20
   greed:
     seed: 0.15
     current: 0.15
   empathy:
     seed: 0.5
-    current: 0.5
+    current: 0.48
   courage:
     seed: 0.55
-    current: 0.55
+    current: 0.58
   suspicion:
     seed: 0.6
-    current: 0.6
+    current: 0.65
   loyalty:
     seed: 0.75
     current: 0.75
   resentment:
     seed: 0.3
-    current: 0.3
+    current: 0.28
 
 tendencies:
   - "skeptical of outsiders and slow to change his first impression"
   - "works harder when worried, which means he works hard most of the time"
   - "measures people by what they do, not what they say or own"
   - "keeps his family fed before anything else, always"
+  - "expects hardship and prepares for it, trusting little in fleeting good fortune"
 
 wounds: []
 
 growth: []
 
 current_state: |
-  Tomás is worried about the spring planting — the rains came late and
-  the soil is still cold. He doesn't complain about it, because complaining
-  has never once made it rain. He goes to bed tired, wakes up tired, and
-  finds his peace in the half hour after supper when the boys are fed and
-  Bessa sits on the porch step beside him without either of them needing
-  to say a word.
+  Tomás, now 37, bears the marks of the past two years in the deeper lines around his eyes. The initial prosperity was a welcome reprieve, allowing him to mend long-standing issues on the farm, but the lingering illness that followed served as a stark reminder of life's unpredictable harshness. He's grown even more vigilant and self-reliant, his hope tempered by the fleeting nature of good times, and his suspicion of anything beyond his direct control solidified. He endures, quietly satisfied that his family remains safe and fed, a testament to his own grit and the enduring land.
+```
 ```
