@@ -5,7 +5,8 @@ import { listNPCIds } from "./npc-loader.js";
 const STATE_PATH = resolve(process.cwd(), "world/state.json");
 const POSITIONS_PATH = resolve(process.cwd(), "world/positions.json");
 const OBJECTIVES_COUNT = 4;
-const GRID_SIZE = 1000;
+const GRID_MIN = -150;
+const GRID_MAX = 150;
 
 export interface Position {
   x: number;
@@ -88,9 +89,10 @@ function loadOrGeneratePositions(npcIds: string[]): Record<string, Position> {
   let changed = false;
   for (const npcId of npcIds) {
     if (!positions[npcId]) {
+      const range = GRID_MAX - GRID_MIN;
       positions[npcId] = {
-        x: Math.floor(Math.random() * GRID_SIZE),
-        z: Math.floor(Math.random() * GRID_SIZE),
+        x: Math.floor(Math.random() * range) + GRID_MIN,
+        z: Math.floor(Math.random() * range) + GRID_MIN,
       };
       changed = true;
     }
@@ -105,7 +107,12 @@ function loadOrGeneratePositions(npcIds: string[]): Record<string, Position> {
 
 function isAlive(npcId: string): boolean {
   try {
-    const soulPath = resolve(process.cwd(), "world/town/npcs", npcId, "soul.md");
+    const soulPath = resolve(
+      process.cwd(),
+      "world/town/npcs",
+      npcId,
+      "soul.md",
+    );
     const content = readFileSync(soulPath, "utf-8");
     const match = content.match(/\nalive:\s*(true|false)/);
     return match?.[1] === "true";
@@ -116,7 +123,12 @@ function isAlive(npcId: string): boolean {
 
 function getNPCName(npcId: string): string {
   try {
-    const soulPath = resolve(process.cwd(), "world/town/npcs", npcId, "soul.md");
+    const soulPath = resolve(
+      process.cwd(),
+      "world/town/npcs",
+      npcId,
+      "soul.md",
+    );
     const content = readFileSync(soulPath, "utf-8");
     const match = content.match(/\nname:\s*"([^"]+)"/);
     return match?.[1] ?? npcId;
@@ -128,7 +140,12 @@ function getNPCName(npcId: string): string {
 function getFirstAvailableDate(npcIds: string[]): string {
   for (const npcId of npcIds) {
     try {
-      const soulPath = resolve(process.cwd(), "world/town/npcs", npcId, "soul.md");
+      const soulPath = resolve(
+        process.cwd(),
+        "world/town/npcs",
+        npcId,
+        "soul.md",
+      );
       const content = readFileSync(soulPath, "utf-8");
       const match = content.match(/last_simulated:\s*"([^"]+)"/);
       if (match?.[1]) return match[1];
