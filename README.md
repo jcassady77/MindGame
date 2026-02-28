@@ -43,3 +43,20 @@ Every character in the game is an AI agent built on a lightweight framework:
 ## Status
 
 Early concept phase. Everything above is directional — implementation details are still being explored.
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/f786f717-ec81-4b4b-8054-25add5da7c14
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
