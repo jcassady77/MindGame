@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "widowed, raising daughter Wren alone"
 faction: null
 alive: true
-last_simulated: "0041-01-01"
+last_simulated: "0102-01-01"
 ---
 
 ## Core
@@ -49,7 +49,7 @@ backstory: |
 ## Lived
 
 ```lived
-{"current_state": {"resilience": 0.88, "community_focus": 0.92, "optimism": 0.65, "watchfulness": 0.63, "wren_centricity": 0.97}, "tendencies": {"resilience": "Brynn is unyielding in the face of adversity, drawing strength from the community and her purpose.", "community_focus": "Brynn is deeply invested in the welfare of Hearthfield, seeing the inn as its beating heart and striving for its collective good.", "optimism": "Brynn maintains a hopeful outlook, though tempered by a pragmatic understanding of life's unpredictable hardships.", "watchfulness": "Brynn possesses a keen eye for details and undercurrents, remaining observant of people and situations.", "wren_centricity": "Brynn's every decision and action is fundamentally driven by the desire to secure and nurture Wren's future."}}
+{"current_state": {"resilience": 1.00, "community_focus": 1.00, "optimism": 1.00, "watchfulness": 0.98, "wren_centricity": 1.00}, "tendencies": {"resilience": "Brynn's spirit is an unyielding bedrock, profoundly forged by decades of overcoming disasters, cementing an absolute, sacred belief in Hearthfield's enduring strength, now proven unbreakable.", "community_focus": "Brynn's dedication to Hearthfield's prosperity is all-consuming, viewing the inn as the town's unwavering heartbeat and its community's welfare as her life's singular purpose.", "optimism": "Brynn's optimism has solidified into an unyielding certainty, a profound and quiet faith in Hearthfield's capacity not just to endure, but to perpetually thrive and innovate through any trial, now proven absolute.", "watchfulness": "Brynn's watchfulness has intensified, now an almost prescient awareness that scans for not just existing threats, but for the subtle, unforeseen shifts that precede new challenges, her vigilance a bedrock for Hearthfield's continued security.", "wren_centricity": "Brynn's entire being remains fiercely devoted to securing the future and flourishing legacy of The Hearthstone, with and for Wren, her capable and beloved partner, now more than ever a true co-steward."}}
 ```lived
 current_state: neutral
 ```

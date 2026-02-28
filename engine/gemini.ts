@@ -10,18 +10,21 @@ import { resolve } from "path";
 function loadApiKey(): string {
   if (process.env.GEMINI_API_KEY) return process.env.GEMINI_API_KEY;
   try {
-    const raw = readFileSync(resolve(process.cwd(), "credentials.json"), "utf-8");
+    const raw = readFileSync(
+      resolve(process.cwd(), "credentials.json"),
+      "utf-8",
+    );
     const creds = JSON.parse(raw) as { GEMINI_API_KEY: string };
     if (creds.GEMINI_API_KEY) return creds.GEMINI_API_KEY;
   } catch {
     // credentials.json not present
   }
   throw new Error(
-    "GEMINI_API_KEY not found. Set the env variable or add it to credentials.json"
+    "GEMINI_API_KEY not found. Set the env variable or add it to credentials.json",
   );
 }
 
-const MODEL_ID = "gemini-2.5-flash";
+const MODEL_ID = "gemini-3-flash-preview";
 
 export interface GeminiNPCResponse {
   newMemories: string;

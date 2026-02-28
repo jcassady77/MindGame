@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "married to Danya Steelmark"
 faction: "Town Guard"
 alive: true
-last_simulated: "0041-01-01"
+last_simulated: "0102-01-01"
 ---
 
 ## Core
@@ -50,6 +50,10 @@ backstory: |
 ## Lived
 
 ```lived
+{"current_state": "profoundly rooted, his duty unwavering and his wisdom deepened by Hearthfield's trials and triumphs; a quiet, unyielding pillar of strength and proven community resilience, ever vigilant but with a calm certainty born of shared endurance."}
+```lived
+current_state: temperament_stoic: 1.06 value_justice: 1.05 value_loyalty: 1.05 value_community: 1.09 moral_pragmatic: 1.05
+```
 ```lived
 current_state:
   age: 49

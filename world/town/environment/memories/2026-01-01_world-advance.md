@@ -1,10 +1,5 @@
 ---
-period: "Year 11-15"
-key_events:
-  - "Sustained agricultural prosperity"
-  - "Severe drought"
-  - "Community resilience and recovery"
-  - "Educational expansion (Public Library)"
-  - "Devastating unprecedented flood"
+period: 6 years after the earthquake
+events: recovery, expansion, harsh winter, major flood, rapid rebuilding
 ---
-The town experienced a cycle of prosperity and hardship, beginning with years of bountiful harvests and expanding trade that enriched its coffers and spirit. A severe drought tested the community's resolve and resources, only to be overcome by collective effort and a renewed focus on learning and growth with the establishment of a public library. However, this period culminated in an unprecedented flood that overwhelmed even the reinforced river defenses, causing significant devastation and reminding Hearthfield of nature's formidable power.
+Over the past six years, Hearthfield demonstrated exceptional resilience, swiftly recovering from the recent earthquake and integrating advanced structural techniques. The town experienced significant population growth and economic diversification, though it faced challenges including a harsh winter and a severe flood. Each trial only strengthened the community's resolve, leading to even more robust infrastructure and a deeper sense of unity, solidifying its reputation as a highly adaptable and thriving settlement.
