@@ -1,16 +1,20 @@
 {
   "name": "mindgame",
   "version": "0.1.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test:gemini": "/Users/gastonarguindegui/.nvm/versions/node/v22.22.0/bin/node node_modules/.bin/tsc && /Users/gastonarguindegui/.nvm/versions/node/v22.22.0/bin/node dist/engine/gemini.test.js"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:gemini": "tsc && node dist/engine/gemini.test.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.0"
   },
   "devDependencies": {
+    "@types/node": "^25.3.2",
     "typescript": "^5.7.0",
-    "@types/node": "^22.0.0"
+    "vitest": "^3.0.0"
   }
 }
