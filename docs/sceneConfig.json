@@ -75,6 +75,21 @@
       "leaves": "#1a2e1a"
     }
   },
+  "questNpcs": [
+    {
+      "id": "john",
+      "name": "John",
+      "position": { "x": 25, "z": -15 },
+      "dialogue": "Ah, a Dragonborn! The roads have been treacherous lately. Glad you made it through."
+    }
+  ],
+  "objectives": [
+    {
+      "id": "find_john",
+      "description": "Find John and talk to him",
+      "targetNpcId": "john"
+    }
+  ],
   "vignette": "rgba(30,50,80,0.4)",
   "particles": {
     "color": "rgba(255,255,255,0.8)",
