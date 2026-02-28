@@ -1,6 +1,6 @@
 import express from "express";
 import { callGemini } from "./gemini.js";
-import { loadNPC, loadEnvironment, listNPCIds } from "./npc-loader.js";
+import { loadNPC, loadEnvironment, listNPCIds, type NPCContext } from "./npc-loader.js";
 import {
   replaceLivedBlock,
   replaceTownLivedBlock,
@@ -103,11 +103,32 @@ app.post("/advance-time", async (req, res) => {
   // Step 2: Update all NPCs in parallel
   const npcIds = listNPCIds();
 
+  // Load all NPCs upfront to build a roster for inter-NPC interactions
+  const allNpcs = new Map<string, NPCContext>();
+  for (const id of npcIds) {
+    try {
+      allNpcs.set(id, loadNPC(id));
+    } catch {
+      // Skip NPCs that fail to load
+    }
+  }
+
   const results = await Promise.allSettled(
     npcIds.map(async (npcId) => {
-      const npc = loadNPC(npcId);
+      const npc = allNpcs.get(npcId);
+      if (!npc) throw new Error(`Failed to load NPC: ${npcId}`);
       const newDate = addYearsToDate(npc.lastSimulated, years);
       const newAge = npc.age + years;
+
+      // Build roster of other townspeople for this NPC
+      const otherNpcs = Array.from(allNpcs.values())
+        .filter((other) => other.npcId !== npcId)
+        .map((other) => {
+          const occMatch = other.soulContent.match(/\noccupation:\s*"([^"]+)"/);
+          const occupation = occMatch?.[1] ?? "resident";
+          return `- ${other.name}, ${occupation}, age ${other.age + years}`;
+        })
+        .join("\n");
 
       const npcPrompt = buildTimeAdvancePrompt(
         npc.name,
@@ -119,7 +140,8 @@ app.post("/advance-time", async (req, res) => {
         npc.livedBlock,
         npc.memoriesContent,
         newDate,
-        years
+        years,
+        otherNpcs
       );
 
       const npcResponse = await callGemini(npcPrompt);
@@ -219,11 +241,24 @@ function buildTimeAdvancePrompt(
   livedBlock: string,
   memoriesContent: string,
   newDate: string,
-  years: number
+  years: number,
+  otherNpcsRoster: string
 ): string {
   const memoriesSection = memoriesContent
     ? `## Your Memories Before These Years\n${memoriesContent}`
     : "## Your Memories Before These Years\nNone recorded.";
+
+  const interactionsSection = otherNpcsRoster
+    ? `## Fellow Townspeople
+${otherNpcsRoster}
+
+During the ${years} year${years > 1 ? "s" : ""} that passed, you lived alongside these people. Consider how you naturally interacted with them given your temperament, values, and occupation:
+- You may have formed a new friendship, deepened an existing bond, or grown apart from someone
+- You may have had a disagreement, rivalry, or falling out — especially if your values clash
+- Shared hardship (world events above) may have brought you closer to some and bred resentment toward others
+- Daily life creates connections: trading goods, sharing meals, working together, or avoiding each other
+Include at least one memory that involves a specific interaction with another townsperson by name. These interactions should feel organic — not every relationship changes, but some do over ${years} year${years > 1 ? "s" : ""}.`
+    : "";
 
   return `${years} year${years > 1 ? "s have" : " has"} passed. You are ${name}, now ${newAge} years old (previously ${oldAge}).
 
@@ -243,8 +278,10 @@ ${livedBlock}
 
 ${memoriesSection}
 
+${interactionsSection}
+
 Reflect on these years and generate:
-- newMemories: 1–3 significant personal memories from this period. Write them as a single string containing one or more complete memory files (YAML frontmatter between --- fences, then 2–5 first-person sentences). Separate multiple memories with a line containing only "---". Use date "${newDate}". Let world events and your core values shape what you remember.
+- newMemories: 1–3 significant personal memories from this period. Write them as a single string containing one or more complete memory files (YAML frontmatter between --- fences, then 2–5 first-person sentences). Separate multiple memories with a line containing only "---". Use date "${newDate}". Let world events and your core values shape what you remember. At least one memory should involve an interaction with a fellow townsperson by name.
 - newSoul: The updated content for your lived block. Age, time, and world events have changed you. Update current_state to reflect who you are now. Trait drift should feel earned — max ±0.10 change per trait across all ${years} year${years > 1 ? "s" : ""}. Update tendencies if any traits crossed a meaningful threshold.
 - npcResponse: Write "N/A"`;
 }
