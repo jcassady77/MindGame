@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "daughter of Brynn Ashford"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -47,6 +47,7 @@ backstory: |
 ## Lived
 
 ```lived
+current_state:adventurousness: 0.90curiosity: 0.82empathy: 0.68responsibility: 0.58community_mindedness: 0.67impulsiveness: 0.65tendencies:action:- explore new places- climb structuressocial:- help community projects- ask probing questionsthought:- understand connections- plan adventures
 ```lived
 current_state:
   curiosity: 0.85

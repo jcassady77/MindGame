@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "single, never married"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -47,6 +47,7 @@ backstory: |
 ## Lived
 
 ```lived
+{"current_state":{"contentment":0.75,"resilience":0.82,"sociability":0.25,"responsibility":0.9,"pride":0.68}}
 ```lived
 age: 40
 current_state:

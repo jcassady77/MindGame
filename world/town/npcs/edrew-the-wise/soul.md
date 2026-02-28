@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "widowed, wife Anneth passed twelve years ago"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -52,12 +52,12 @@ backstory: |
 ```lived
 current_state:
   age: 76
-  wise: 0.95
-  resilient: 0.85
-  communal: 0.98
-  frail: 0.75
-  optimistic: 0.80
-  content: 0.83
+  wise: 0.98
+  resilient: 0.88
+  communal: 0.99
+  frail: 0.80
+  optimistic: 0.89
+  content: 0.92
 tendencies: {}
 ```lived
 traits:

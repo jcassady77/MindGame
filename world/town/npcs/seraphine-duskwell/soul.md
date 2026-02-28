@@ -8,7 +8,7 @@ economic_status: poor
 relationship_status: "single"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -48,6 +48,12 @@ backstory: |
 ## Lived
 
 ```lived
+current_state:
+  extroversion: 0.18
+  agreeableness: 0.35
+  openness: 0.85
+  conscientiousness: 0.80
+  neuroticism: 0.77
 ```lived
 traits:
   trust:

@@ -27,8 +27,8 @@ cultural_values:
 ## Lived
 
 ```lived
-population: 268
-prosperity: 0.60
+population: 285
+prosperity: 0.72
 infrastructure:
   condition: stable
   notable_buildings:
@@ -40,11 +40,15 @@ infrastructure:
     - "Market Square"
     - "Guard Barracks"
     - "Thornwick Healing House (Elara's practice)"
-  recent_construction: []
-social_atmosphere: 0.66
-safety: 0.7
-current_state: |
-  After enduring a challenging, protracted winter that depleted its stores, Hearthfield found renewed strength in a bountiful spring harvest. The town's communal spirit, though tested, has rekindled, and its people are slowly but steadily rebuilding their reserves and their quiet sense of hope.
+    - "Whisperwind Bridge"
+  recent_construction:
+    - "Whisperwind Bridge"
+social_atmosphere: 0.75
+safety: 0.72
+current_state: |-
+  Hearthfield has experienced two years of consistent growth and renewed hope. Trade has steadily flourished, attracting new families to its peaceful environs, and the completion of the new Whisperwind Bridge has cemented its economic stability and boosted communal pride.
 wounds: []
-growth: []
+growth:
+  - "Trade flourished, attracting new families"
+  - "New Whisperwind Bridge completed, boosting economy and connectivity"
 ```

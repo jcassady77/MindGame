@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "married to Henrick Thornwick (ailing)"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -48,6 +48,26 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
+current_state:
+  physical_condition: At 57, a gentle weariness settles deeper, though her hands remain steady for her work, they shake a bit more often when she's truly fatigued. She moves with a practiced slowness, each step a testament to years of tireless service.
+  emotional_state: A quiet blend of profound love and deepening sorrow for Henrick, interwoven with a steady, humble pride in Hearthfield's flourishing. She carries her burdens with grace, finding solace in her routines and the small joys of community.
+  outlook: Steadfast and selfless, she remains dedicated to her calling and the well-being of Hearthfield. While she embraces the community's growth, a deep-seated pragmatism tempers her hopefulness, particularly concerning the inevitable march of time and illness, especially with Henrick.
+traits:
+  empathy: 0.92
+  patience: 0.86
+  resilience: 0.83
+  melancholy: 0.68
+  weariness: 0.59
+  hopefulness: 0.60
+  stubbornness: 0.41
+  cynicism: 0.10
+  optimism: 0.51
+tendencies:
+  - "prone to quiet introspection and finding comfort in familiar routines"
+  - "more often seeks moments of stillness and peace amidst her duties"
+  - "a quiet hum of a hymn often accompanies her while tending to her herbs or Henrick"
+```
 ```lived
 age: 57
 current_state:

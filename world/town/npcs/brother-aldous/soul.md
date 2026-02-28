@@ -8,7 +8,7 @@ economic_status: modest
 relationship_status: "celibate, bound by vows"
 faction: "The Quiet Light"
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -51,6 +51,21 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
+current_state:
+  melancholy: 0.75
+  contentment: 0.58
+  empathy: 0.85
+  cynicism: 0.25
+  faith: 0.82
+  stoicism: 0.70
+tendencies:
+  emotional_expressiveness: low
+  social_openness: moderate
+  risk_aversion: high
+  dogmatism: moderate
+  generosity: high
+```
 ```lived
 traits:
   trust:

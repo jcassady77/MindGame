@@ -34,7 +34,7 @@
 |---|---|---|
 | `npcId` | `string` | Kebab-case NPC identifier. Use this as the `npcId` param in `POST /chat`. |
 | `npcName` | `string` | Display name. |
-| `position` | `{ x: number, z: number }` | NPC's position on the 1000×1000 world grid. Stable across sessions — generated once in `world/positions.json`. |
+| `position` | `{ x: number, z: number }` | NPC's position on the -150×150 world grid. Stable across sessions — generated once in `world/positions.json`. |
 | `completed` | `boolean` | `true` once the player has spoken with this NPC and the conversation ended with `"Good bye."` |
 
 ---

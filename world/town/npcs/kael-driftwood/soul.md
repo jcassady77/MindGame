@@ -8,7 +8,7 @@ economic_status: destitute
 relationship_status: "single, estranged from all known family"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -51,17 +51,7 @@ backstory: |
 ## Lived
 
 ```lived
-current_state:
-  age: 33
-  vigilance: 0.88
-  trust_in_others: 0.25
-  openness_to_community: 0.38
-  self_reliance: 0.89
-  guilt_about_past: 0.60
-  hope: 0.37
-tendencies:
-  - "still prefers to be watchful, but less prone to immediate distrust of individual townsfolk"
-  - "more willing to quietly observe and appreciate communal efforts"
+{  "current_state": {    "age": 33,    "vigilance": 0.80,    "trust_in_others": 0.35,    "openness_to_community": 0.45,    "self_reliance": 0.90,    "guilt_about_past": 0.55,    "hope": 0.45  },  "tendencies": [    "maintains a watchful demeanor, though his distrust is now more a quiet observation than immediate suspicion towards known townsfolk",    "finds himself more willing to silently contribute to communal efforts, a quiet acknowledgement of shared well-being"  ]}
 ```lived
 traits:
   trust:

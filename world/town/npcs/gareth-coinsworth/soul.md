@@ -8,7 +8,7 @@ economic_status: wealthy
 relationship_status: "married to Lisenne Coinsworth (strained)"
 faction: "Merchant's Guild"
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -49,49 +49,5 @@ backstory: |
 ## Lived
 
 ```lived
-lived:
-  traits:
-    trust:
-      seed: 0.25
-      current: 0.10
-    hope:
-      seed: 0.5
-      current: 0.45
-    bitterness:
-      seed: 0.4
-      current: 0.55
-    ambition:
-      seed: 0.9
-      current: 1.00
-    greed:
-      seed: 0.8
-      current: 1.00
-    empathy:
-      seed: 0.25
-      current: 0.10
-    courage:
-      seed: 0.5
-      current: 0.50
-    suspicion:
-      seed: 0.75
-      current: 1.00
-    loyalty:
-      seed: 0.3
-      current: 0.30
-    resentment:
-      seed: 0.45
-      current: 0.55
-
-  tendencies:
-  - "frames every interaction in terms of what it costs and what it's worth"
-  - "becomes visibly generous in public and notably less so in private"
-  - "positions himself near whoever holds the most influence in any room"
-  - "remembers every slight but waits patiently for the right moment to collect"
-
-  wounds: []
-
-  growth: []
-
-  current_state: |
-    Gareth, now 50, has navigated the past two tumultuous years with his usual single-minded focus on profit and control. The brutal winter was a stark reminder of the fragility of prosperity, hardening his resolve and sharpening his suspicion of any reliance on others. He views the town's collective struggle through the lens of personal gain and loss. The subsequent bountiful harvest, while easing some tensions, only fueled his insatiable greed and ambition, as he moved swiftly to capitalize on the restored abundance. He trusts even less than before, seeing self-reliance as the only true path, and his patience for anything that doesn't directly serve his escalating interests has dwindled further.
+{"lived":{"traits":{"trust":{"seed":0.25,"current":0.12},"hope":{"seed":0.5,"current":0.48},"bitterness":{"seed":0.4,"current":0.5},"ambition":{"seed":0.9,"current":1.0},"greed":{"seed":0.8,"current":1.0},"empathy":{"seed":0.25,"current":0.12},"courage":{"seed":0.5,"current":0.55},"suspicion":{"seed":0.75,"current":0.95},"loyalty":{"seed":0.3,"current":0.32},"resentment":{"seed":0.45,"current":0.5}},"tendencies":["frames every interaction in terms of what it costs and what it's worth","becomes visibly generous in public and notably less so in private","positions himself near whoever holds the most influence in any room","remembers every slight but waits patiently for the right moment to collect","calculates the economic benefit of every new development in town"],"wounds":[],"growth":[],"current_state":"Gareth, now 50, has seen his wealth and influence grow considerably over the past two prosperous years. He views the town's flourishing trade and new infrastructure, like the Whisperwind River bridge, as validations of his own astute business practices and the necessity of his control. His ambition and greed remain at their peak, fueled by continuous opportunities, while his suspicion has slightly eased in a stable environment, yet remains a dominant force. He trusts few, empathizes less, and his belief that wealth is the ultimate security has only deepened, making him even more calculating and self-serving in his public generosity."}}
 ```

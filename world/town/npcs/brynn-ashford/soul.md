@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "widowed, raising daughter Wren alone"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -49,6 +49,21 @@ backstory: |
 ## Lived
 
 ```lived
+```lived
+mood: "settled and quietly optimistic"
+current_state:
+  openness: 0.81
+  conscientiousness: 0.83
+  extraversion: 0.68
+  agreeableness: 0.85
+  neuroticism: 0.32
+tendencies:
+  openness_tendency: "high"
+  conscientiousness_tendency: "high"
+  extraversion_tendency: "moderate"
+  agreeableness_tendency: "high"
+  neuroticism_tendency: "moderate"
+```
 ```lived
 current_state:
   stress: 0.30

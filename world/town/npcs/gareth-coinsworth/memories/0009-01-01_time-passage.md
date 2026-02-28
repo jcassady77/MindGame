@@ -1,0 +1,8 @@
+---date: 0009-01-01tags: [wealth, trade, expansion, cunning]---
+The first year of quiet prosperity saw my ledgers swell significantly; the flourishing trade routes I had established hummed with activity. I made sure to meet each new family arriving in Hearthfield, not out of welcome, but to assess their skills, their capital, and how they might fit into — or disrupt — my carefully constructed network of commerce. More people simply meant more opportunities for profit and control.
+---
+date: 0009-01-01tags: [power, infrastructure, control, profit]---
+The completion of the Whisperwind River bridge was a testament to sensible investment, and I ensured my wagons were among the first to cross, shortening journeys and increasing efficiency. I immediately saw the opportunity to solidify my hold on trade with the outlying farms, making it difficult for anyone else to compete with the speed and cost-effectiveness I could now command. It was a visible demonstration of progress, and an invisible tightening of my grip.
+---
+date: 0009-01-01tags: [wealth, power, security, ambition]---
+These past two years have simply reinforced my long-held belief: true security comes from wealth and unwavering control. Hearthfield's growth, while attributed to 'communal effort' by some, is ultimately sustained by shrewd management and strategic investments, often my own. I have watched my assets grow, my influence deepen, and my position in this town become even more unassailable.

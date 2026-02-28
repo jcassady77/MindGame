@@ -1,6 +1,6 @@
 ---
-date_range: "2 years after recent illness"
-event_type: "Hardship & Recovery"
-summary: "A harsh winter followed by a bountiful harvest"
+period: "Year 3 - Year 4 Post-Winter"
+event_type: "Period of Growth and Development"
+impact: "Positive"
 ---
-Hearthfield faced a severe, prolonged winter that stretched its resources thin and tested the resolve of its inhabitants, coming on the heels of a lingering illness. Despite the hardship, a resilient communal spirit emerged, leading to a surprisingly bountiful harvest in the subsequent spring. The town has since begun a slow but steady recovery, replenishing its stores and finding renewed optimism amidst its enduring challenges.
+Following the bountiful spring, Hearthfield enjoyed a period of sustained prosperity. Trade expanded, drawing new families to the town and slowly increasing its population. The completion of the Whisperwind Bridge marked a significant achievement, strengthening connections and boosting the local economy.

@@ -8,7 +8,7 @@ economic_status: poor
 relationship_status: "single, several unresolved attachments"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -50,7 +50,7 @@ backstory: |
 ## Lived
 
 ```lived
-{"current_state": {"mood": "tempered melancholy with quiet hope", "energy": "moderate-low", "openness": 0.73, "conscientiousness": 0.47, "extraversion": 0.33, "agreeableness": 0.84, "neuroticism": 0.78, "optimism": 0.42, "empathy": 0.98, "resilience": 0.58, "cynicism": 0.20}, "tendencies": {"to withdraw when overwhelmed": true, "to seek beauty in mundane things": true, "to internalize others' emotions": true, "to express feelings through music": true, "to avoid confrontation": true, "to find comfort in quiet solitude": true}}
+{"current_state": {"mood": "thoughtful contentment with underlying melancholy", "energy": "moderate", "openness": 0.75, "conscientiousness": 0.49, "extraversion": 0.35, "agreeableness": 0.88, "neuroticism": 0.70, "optimism": 0.50, "empathy": 0.98, "resilience": 0.65, "cynicism": 0.18}, "tendencies": {"to withdraw when overwhelmed": true, "to seek beauty in mundane things": true, "to internalize others' emotions": true, "to express feelings through music": true, "to avoid confrontation": true, "to find comfort in quiet solitude": true}}
 ```lived
 traits:
   trust:

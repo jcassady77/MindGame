@@ -8,7 +8,7 @@ economic_status: comfortable
 relationship_status: "married to Danya Steelmark"
 faction: "Town Guard"
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -51,11 +51,11 @@ backstory: |
 
 ```lived
 current_state:
-  vigilance: 0.85
-  compassion: 0.72
-  adaptability: 0.82
-  weariness: 0.53
-  sense_of_community_responsibility: 0.98
+  vigilance: 0.82
+  compassion: 0.77
+  adaptability: 0.84
+  weariness: 0.48
+  sense_of_community_responsibility: 0.99
 ```lived
 traits:
   trust:

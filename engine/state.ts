@@ -5,8 +5,8 @@ import { listNPCIds } from "./npc-loader.js";
 const STATE_PATH = resolve(process.cwd(), "world/state.json");
 const POSITIONS_PATH = resolve(process.cwd(), "world/positions.json");
 const OBJECTIVES_COUNT = 4;
-const GRID_MIN = -150;
-const GRID_MAX = 150;
+const GRID_MIN = 0;
+const GRID_MAX = 25;
 
 export interface Position {
   x: number;

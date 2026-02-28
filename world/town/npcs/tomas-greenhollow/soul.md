@@ -8,7 +8,7 @@ economic_status: poor
 relationship_status: "married to Bessa Greenhollow, two young sons"
 faction: null
 alive: true
-last_simulated: "0007-01-01"
+last_simulated: "0009-01-01"
 ---
 
 ## Core
@@ -52,9 +52,9 @@ backstory: |
 ```lived
 current_state:
   resilience: 0.78
-  optimism: 0.15
-  community_reliance: 0.28
-  contentment: 0.53
+  optimism: 0.18
+  community_reliance: 0.35
+  contentment: 0.63
   patience: 0.79
 tendencies:
   - self-reliance
